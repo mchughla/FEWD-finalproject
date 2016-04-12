@@ -22,10 +22,24 @@
 .clear {
     clear: both;
 }
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
+header,
+main, 
+section
+{
+    border: 1px solid red;
+    background-color: pink;
+    margin: 20px;
+}
+
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
@@ -34,27 +48,53 @@ body {
 	cursor: default;
 }
 
-html, body {
-    border: none;
-    padding: 0px;
-}
 .container {
-    margin: auto;
     border: none;
-    width: 900px;
+    width: 798px;
+}
+header {
+     position: fixed;
+     width: 100%;
+     margin: 0 0;
 }
 .nav-item {
     width: 20%;
     float: left;
 }
 
+nav a:link {
+    text-decoration: none;
+    color: red;
+}
+
 nav ul {
 	list-style: none;
 
 }
+section {
+    height: 300px;
 
+}
 
+h4 {
+    padding: 10px;
+}
+section p {
+    padding: 10px;
+    font-size: 1.2rem;
+}
 
+footer {
+    background: lightblue;
+    margin: auto;
+}
+footer p {
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: right;
+    margin: 5px;
+
+}
 
 
 
@@ -74,6 +114,9 @@ nav ul {
         width: 100%;
         display: none;
 }
+    nav {
+        display: none;
+    }
     .second span {
         width: 100%;
     }
