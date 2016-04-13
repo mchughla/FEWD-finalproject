@@ -1,17 +1,59 @@
 $(document).ready(function() {
 
+//Create array to hold names of work photos 
+	var work = [
+		'work1',
+		'work2',
+		'work3',
+		'work4',
+		'work6',
+		'work7'
+	];
 
-// var now = new Date();
-// var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
-// var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
-// function fourdigits(number) {
-//     return (number < 1000) ? number + 1900 : number;
-// }
-// today =  months[now.getMonth()] + " " +
-//          date + ", " +
-//          (fourdigits(now.getYear())) ;
-// document.write(today);
+function createWorkHTML (workPhoto) {
+		var imageHTML = '<img id="carousel" src="images/' + workPhoto.toLowerCase() + '.png" />';
+
+		return imageHTML;
+	}
+
+	var workImageHTML = [];
+
+	for (var i = 0; i < work.length; i++) {
+		var workPhoto = work[i];
+		var html = createWorkHTML(workPhoto);
+
+		workImageHTML.push(html);
+	}
+
+	var carouselIndex = 0;
+
+	$('#next').click(showNextImage);
+	$('#previous').click(showPreviousImage);
 
 
+	function showNextImage() {
+		carouselIndex++;
+
+		if (carouselIndex > workImageHTML.length - 1) {
+			carouselIndex = 0;
+		}
+
+		var nextWorkImageHTML = workImageHTML[carouselIndex];
+
+		$('#carousel-view').html(nextWorkImageHTML);
+		$('nextWorkImageHTML').slide({left: 0});
+	}
+
+	function showPreviousImage() {
+		carouselIndex--;
+
+		if (carouselIndex < 0) {
+			carouselIndex = workImageHTML.length - 1;
+		}
+
+		var nextWorkImageHTML = workImageHTML[carouselIndex];
+
+		$('#carousel-view').html(nextWorkImageHTML);
+	}
 
 	});

@@ -13,30 +13,41 @@
 			<nav class="clearfix">
 				<ul>
 					<li class="nav-item"><a href="#">About</a></li>
-					<li class="nav-item"><a href="#">Work</a></li>
-					<li class="nav-item"><a href="#">Travel</a></li>
-					<li class="nav-item"><a href="#">Food</a></li>
-					<li class="nav-item"><a href="#">Connect</a></li>
+					<li class="nav-item"><a href="#work">Work</a></li>
+					<li class="nav-item"><a href="#travel">Travel</a></li>
+					<li class="nav-item"><a href="#food">Food</a></li>
+					<li class="nav-item"><a href="#connect">Connect</a></li>
 
 				</ul>
 			</nav>
 		</header>
 		<main class="clearfix">
 		<section class="clearfix" id="about">
-			<h4>About</h4>
 			<p>Laura is a freelance photographer living in Washington, D.C.</p>
 		</section>
 		<section class="clearfix" id="event">
-			<h4>Event </h4>
+		<div class="container carousel-wrapper">
+			<a name="work"></a>
+			<div id="carousel-view">
+				<img id="carousel" src="images/work1.png" />
+			</div>
+			<button class="btn btn-default" id="previous">Previous</button>
+			<button class="btn btn-default" id="next">Next</button>
+		</div>
+
 		</section>
 		<section class="clearfix" id="travel">
+			<a name="travel"></a>
 			<h4>Travel </h4>
 		</section>
 		<section class="clearfix" id="food">
+			<a name="food"></a>
 			<h4>Food </h4>
 		</section>
 		<section class="clearfix" id="connect">
+			<a name="connect"></a>
 			<h4>Connect</h4>
+			
 		</section>
 
 	</main>
