@@ -1,5 +1,5 @@
     
-//create function for navigation clicks to scroll 
+//create function for navigation clicks to scroll and change color
 $(document).ready(function() {
     $(".scroll").click(function(event) {
     event.preventDefault();

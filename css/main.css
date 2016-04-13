@@ -36,16 +36,12 @@ main,
 section,
 footer
 {
-    border: 1px solid gray;
-    background-color: none;
-    margin: 20px;
+    background-color: lightgray;
 }
 
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 20px;
-	line-height: 1.5;
 	cursor: default;
 }
 
@@ -56,10 +52,20 @@ body {
 header {
      width: 100%;
      margin: 0 0;
+     height: 100px;
 }
+header p {
+    margin-top: 40px;
+    text-align: right;
+    font-weight: lighter;
+    font-size: 45px;
+}
+
 nav {
      position: fixed;
      width: 100%;
+     font-size: 20px;
+
 
 }
 .nav-item {
@@ -69,9 +75,23 @@ nav {
     background-color: transparent;
 }
 
+a {
+    color: white ;
+}
+
+a:active {
+    color: white;
+}
+a:hover {
+    color: white;
+}
+a:visited{
+    color: white;
+}
+
 nav a:link {
     text-decoration: none;
-    color: gray;
+
 }
 
 nav ul {
@@ -89,8 +109,7 @@ section .photo {
 
 
 #food img {
-    height: 500px;
-    max-width: 100%;
+    max-width:100%;
 }
 #about {
     height: 100px;
@@ -146,13 +165,6 @@ footer p {
         display: none;
 }
     nav {
-        display: none;
-    }
-    .second span {
-        width: 100%;
-    }
-    .third span {
-        width: 100%;
         display: none;
     }
 }

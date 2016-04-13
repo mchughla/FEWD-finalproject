@@ -6,14 +6,16 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600italic,600,800,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
 	<div id="container">
 		<header class="clearfix">
-						<p>Laura is a freelance photographer living in Washington, D.C.</p>
-
-			<nav class="clearfix">
+			<section class="about">
+				<p>Laura is a freelance photographer based in Washington, D.C.</p>
+			</section>
+					</header>
+		<main class="clearfix">
+		<nav class="clearfix">
 				<ul>
 					<li class="nav-item"><a href="#work" class='scroll'>Work</a></li>
 					<li class="nav-item"><a href="#travel" class='scroll'>Travel</a></li>
@@ -22,9 +24,7 @@
 
 				</ul>
 			</nav>
-		</header>
-		<main class="clearfix">
-		
+	<a name="work" class="scroll"></a>
 		<section class="clearfix" id="event">
 		<div class="container carousel-wrapper">
 			<a name="work" class="scroll"></a>
@@ -37,6 +37,7 @@
 
 		</section>
 		<section class="clearfix" id="travel">
+		<div class="container carousel-wrapper">
 			<a name="travel" class="scroll"></a>
 			<div id="carousel-view-travel">
 				<img id="travel" src="images/travel/travel1.jpg"  />
@@ -46,6 +47,7 @@
 		</div>
 		</section>
 		<section class="clearfix" id="food">
+		<div class="container carousel-wrapper">
 			<a name="food" class='scroll'></a>
 			<div id="carousel-view-food">
 				<img id="food" src="images/food/food1.jpg" />
@@ -68,10 +70,11 @@
 			
 		</section>
 
-	</main>
+
 		<footer class="clearfix">
 			<p>Copyright bitchez</p>
 		</footer>
+		</main>
 	</div>
 </body>
 	<script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
