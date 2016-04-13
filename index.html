@@ -6,6 +6,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600italic,600,800,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -13,10 +14,10 @@
 			<nav class="clearfix">
 				<ul>
 					<li class="nav-item"><a href="#">About</a></li>
-					<li class="nav-item"><a href="#work">Work</a></li>
-					<li class="nav-item"><a href="#travel">Travel</a></li>
-					<li class="nav-item"><a href="#food">Food</a></li>
-					<li class="nav-item"><a href="#connect">Connect</a></li>
+					<li class="nav-item"><a href="#work" class='scroll'>Work</a></li>
+					<li class="nav-item"><a href="#travel" class='scroll'>Travel</a></li>
+					<li class="nav-item"><a href="#food" class='scroll'>Food</a></li>
+					<li class="nav-item"><a href="#connect" class='scroll'>Connect</a></li>
 
 				</ul>
 			</nav>
@@ -27,9 +28,9 @@
 		</section>
 		<section class="clearfix" id="event">
 		<div class="container carousel-wrapper">
-			<a name="work"></a>
+			<a name="work" class="scroll"></a>
 			<div id="carousel-view">
-				<img id="carousel" src="images/work1.png" />
+				<img id="work" src="images/work/work1.png" />
 			</div>
 			<button class="btn btn-default" id="previous">Previous</button>
 			<button class="btn btn-default" id="next">Next</button>
@@ -37,15 +38,28 @@
 
 		</section>
 		<section class="clearfix" id="travel">
-			<a name="travel"></a>
+			<a name="travel" class="scroll"></a>
 			<h4>Travel </h4>
+			<div id="carousel-view-travel">
+				<img id="travel" src="images/travel/travel1.jpg" />
+			</div>
+			<button class="btn btn-default" id="previous-travel">Previous</button>
+			<button class="btn btn-default" id="next-travel">Next</button>
+		</div>
 		</section>
 		<section class="clearfix" id="food">
-			<a name="food"></a>
+			<a name="food" class='scroll'></a>
 			<h4>Food </h4>
+
+			<div id="carousel-view-food">
+				<img id="food" src="images/food/food1.jpg" />
+			</div>
+			<button class="btn btn-default" id="previous-food">Previous</button>
+			<button class="btn btn-default" id="next-food">Next</button>
+		</div>
 		</section>
 		<section class="clearfix" id="connect">
-			<a name="connect"></a>
+			<a name="connect" class='scroll'></a>
 			<h4>Connect</h4>
 			
 		</section>
@@ -58,4 +72,5 @@
 </body>
 	<script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
 	<script src="js/index.js"></script>
+
 </html>

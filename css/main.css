@@ -36,8 +36,8 @@ main,
 section,
 footer
 {
-    border: 1px solid blue;
-    background-color: lightblue;
+    border: 1px solid gray;
+    background-color: black;
     margin: 20px;
 }
 
@@ -72,15 +72,22 @@ nav ul {
 	list-style: none;
 
 }
+
 section .photo {
     height: 600px;
-
 }
 #about {
     height: 100px;
     text-align: center;
     font-weight: lighter;
     margin: 0 20 20 0;
+}
+img {
+    height: 600px;
+    margin: auto;
+}
+.travel img {
+    height: 600px;
 }
 
 h4 {
