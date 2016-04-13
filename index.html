@@ -11,9 +11,10 @@
 <body>
 	<div id="container">
 		<header class="clearfix">
+						<p>Laura is a freelance photographer living in Washington, D.C.</p>
+
 			<nav class="clearfix">
 				<ul>
-					<li class="nav-item"><a href="#">About</a></li>
 					<li class="nav-item"><a href="#work" class='scroll'>Work</a></li>
 					<li class="nav-item"><a href="#travel" class='scroll'>Travel</a></li>
 					<li class="nav-item"><a href="#food" class='scroll'>Food</a></li>
@@ -23,9 +24,7 @@
 			</nav>
 		</header>
 		<main class="clearfix">
-		<section class="clearfix" id="about">
-			<p>Laura is a freelance photographer living in Washington, D.C.</p>
-		</section>
+		
 		<section class="clearfix" id="event">
 		<div class="container carousel-wrapper">
 			<a name="work" class="scroll"></a>
@@ -39,9 +38,8 @@
 		</section>
 		<section class="clearfix" id="travel">
 			<a name="travel" class="scroll"></a>
-			<h4>Travel </h4>
 			<div id="carousel-view-travel">
-				<img id="travel" src="images/travel/travel1.jpg" />
+				<img id="travel" src="images/travel/travel1.jpg"  />
 			</div>
 			<button class="btn btn-default" id="previous-travel">Previous</button>
 			<button class="btn btn-default" id="next-travel">Next</button>
@@ -49,8 +47,6 @@
 		</section>
 		<section class="clearfix" id="food">
 			<a name="food" class='scroll'></a>
-			<h4>Food </h4>
-
 			<div id="carousel-view-food">
 				<img id="food" src="images/food/food1.jpg" />
 			</div>
@@ -61,6 +57,14 @@
 		<section class="clearfix" id="connect">
 			<a name="connect" class='scroll'></a>
 			<h4>Connect</h4>
+			<form id="contactForm">
+				<input type="text" name="name" placeholder="Name">
+
+				<input type="email" name="emailAddress" placeholder="Email">
+
+				<input type="submit" value="Let's Talk!">
+			</form>
+			<div id="successMessage" class="success hide"></div>
 			
 		</section>
 

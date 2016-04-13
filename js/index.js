@@ -40,6 +40,7 @@ function createWorkHTML (workPhoto) {
 
 
 	function showNextImage() {
+		event.preventDefault();
 		carouselIndex++;
 
 		if (carouselIndex > workImageHTML.length - 1) {
@@ -99,6 +100,7 @@ function createTravelHTML (travelPhoto) {
 
 
 	function showNextImage() {
+		event.preventDefault();
 		carouselIndex++;
 
 		if (carouselIndex > travelImageHTML.length - 1) {
@@ -112,6 +114,7 @@ function createTravelHTML (travelPhoto) {
 	}
 
 	function showPreviousImage() {
+		event.preventDefault();
 		carouselIndex--;
 
 		if (carouselIndex < 0) {
@@ -132,8 +135,10 @@ $(document).ready(function() {
 		'food1',
 		'food2',
 		'food3',
-		'food4',
-		'food5'
+		'food5',
+		'food6',
+		'food7',
+		'food8'
 	];
 
 function createFoodHTML (foodPhoto) {
@@ -158,6 +163,7 @@ function createFoodHTML (foodPhoto) {
 
 
 	function showNextImage() {
+		event.preventDefault();
 		carouselIndex++;
 
 		if (carouselIndex > foodImageHTML.length - 1) {
@@ -171,6 +177,7 @@ function createFoodHTML (foodPhoto) {
 	}
 
 	function showPreviousImage() {
+		event.preventDefault();
 		carouselIndex--;
 
 		if (carouselIndex < 0) {

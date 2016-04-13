@@ -37,7 +37,7 @@ section,
 footer
 {
     border: 1px solid gray;
-    background-color: black;
+    background-color: none;
     margin: 20px;
 }
 
@@ -54,27 +54,43 @@ body {
     width: 798px;
 }
 header {
-     position: fixed;
      width: 100%;
      margin: 0 0;
+}
+nav {
+     position: fixed;
+     width: 100%;
+
 }
 .nav-item {
     width: 20%;
     float: left;
+    text-align: right;
+    background-color: transparent;
 }
 
 nav a:link {
     text-decoration: none;
-    color: blue;
+    color: gray;
 }
 
 nav ul {
 	list-style: none;
 
 }
+section {
+    text-align: center;
+}
 
 section .photo {
-    height: 600px;
+    height: 100%;
+    max-width: 100%;
+}
+
+
+#food img {
+    height: 500px;
+    max-width: 100%;
 }
 #about {
     height: 100px;
@@ -83,11 +99,7 @@ section .photo {
     margin: 0 20 20 0;
 }
 img {
-    height: 600px;
-    margin: auto;
-}
-.travel img {
-    height: 600px;
+    max-width: 100%;
 }
 
 h4 {
@@ -96,6 +108,12 @@ h4 {
 section p {
     padding: 10px;
     font-size: 1.2rem;
+}
+
+form {
+    text-align: center;
+    font-size: 14;
+
 }
 
 footer {
