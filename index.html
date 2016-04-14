@@ -11,62 +11,182 @@
 	<div id="container">
 		<header class="clearfix">
 			<section class="about">
-				<p>Laura is a freelance photographer based in Washington, D.C.<br>
-				<a href="#connect" class='scroll'>Connect</a></p>
+				<p>Laura is a freelance photographer based in Washington, D.C.<br></p>
 			</section>
-					</header>
-		<main class="clearfix">
-		<nav class="clearfix">
+		<nav class="nav navbar-static-top">
+		  <div class="padded">
+		    <ul>
+		      <li class="active"><a id="link1" class="nav-work" href="#work">Work</a></li>
+		      <li><a id="link2" class="nav-travel" href="#travel">Travel</a></li>
+		      <li><a id="link3" class="nav-food" href="#food">Food</a></li>
+		      <li><a id="link3" class="nav-connect" href="#connect">Connect</a></li>
+
+		      <li class="scrollTop"><a href="#"><span class="entypo-up-open"></span></a></li>
+		    </ul>
+		  </div>
+		</nav>
+<!-- 			<nav class="clearfix navbar navbar-default">
 				<ul>
-					<li class="nav-item"><a href="#work" class='scroll'>Work</a></li>
-					<li class="nav-item"><a href="#travel" class='scroll'>Travel</a></li>
-					<li class="nav-item"><a href="#food" class='scroll'>Food</a></li>
+					<li><a href="#work" class='scroll'>Work</a></li>
+					<li><a href="#travel" class='scroll'>Travel</a></li>
+					<li><a href="#food" class='scroll'>Food</a></li>
 
 				</ul>
-			</nav>
-	<a name="work" class="scroll"></a>
-		<section class="clearfix" id="event">
-		<div class="container carousel-wrapper">
-			<a name="work" class="scroll"></a>
-			<div id="carousel-view">
-				<img id="work" src="images/work/work1.png" />
-			</div>
-			<button class="btn btn-default" id="previous">Previous</button>
-			<button class="btn btn-default" id="next">Next</button>
-		</div>
+			</nav> -->
+					</header>
+		<main class="clearfix">
+		<section class="clearfix" id="work">
+			<div class="container">
+			  <br>
+			  <div id="workCarousel" class="carousel slide" >
+			    <!-- Indicators -->
+			    <ol class="carousel-indicators">
+			      <li data-target="#workCarousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#workCarousel" data-slide-to="1"></li>
+			      <li data-target="#workCarousel" data-slide-to="2"></li>
+			      <li data-target="#workCarousel" data-slide-to="3"></li>
+			      <li data-target="#workCarousel" data-slide-to="4"></li>
+			      <li data-target="#workCarousel" data-slide-to="5"></li>
+			      <li data-target="#workCarousel" data-slide-to="6"></li>
+			      <li data-target="#workCarousel" data-slide-to="7"></li> 
+			    </ol>
 
-		</section>
-		<section class="clearfix" id="travel">
-		<div class="container carousel-wrapper">
-			<a name="travel" class="scroll"></a>
-			<div id="carousel-view-travel">
-				<img id="travel" src="images/travel/travel1.jpg"  />
+			    <!-- Wrapper for slides -->
+			    <div class="carousel-inner" role="listbox">
+			      <div class="item active">
+			        <img src="images/work/work1.png" class='work'>
+			      </div>
+
+			      <div class="item work">
+			        <img src="images/work/work2.png">
+			      </div>
+			    
+			      <div class="item work">
+			        <img src="images/work/work3.png">
+			      </div>
+
+			      <div class="item work">
+			        <img src="images/work/work4.png">
+			      </div>
+			      <div class="item work">
+			        <img src="images/work/work6.png">
+			      </div>
+			      <div class="item work">
+			        <img src="images/work/work7.png">
+			      </div>
+			    </div>
+
+			    <!-- Left and right controls -->
+			    <a class="left carousel-control" href="#workCarousel" role="button" data-slide="prev">
+			      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			      <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#workCarousel" role="button" data-slide="next">
+			      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			      <span class="sr-only">Next</span>
+			    </a>
+			  </div>
 			</div>
-			<button class="btn btn-default" id="previous-travel">Previous</button>
-			<button class="btn btn-default" id="next-travel">Next</button>
-		</div>
-		</section>
-		<section class="clearfix" id="food">
-		<div class="container carousel-wrapper">
-			<a name="food" class='scroll'></a>
-			<div id="carousel-view-food">
-				<img id="food" src="images/food/food1.jpg" />
+
+	<section class="clearfix scroll" id="travel">
+			<div class="container">
+			  <br>
+			  <div id="travelCarousel" class="carousel slide" >
+			    <!-- Indicators -->
+			    <ol class="carousel-indicators">
+			      <li data-target="#travelCarousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#travelCarousel" data-slide-to="1"></li>
+			      <li data-target="#travelCarousel" data-slide-to="2"></li>
+			      <li data-target="#travelCarousel" data-slide-to="3"></li>
+			      <li data-target="#travelCarousel" data-slide-to="4"></li>
+			      <li data-target="#travelCarousel" data-slide-to="5"></li>
+			      <li data-target="#travelCarousel" data-slide-to="6"></li>
+			    </ol>
+
+			    <!-- Wrapper for slides -->
+			    <div class="carousel-inner" role="listbox">
+			      <div class="item active travel">
+			        <img src="images/travel/travel1.jpg">
+			      </div>
+
+			      <div class="item travel">
+			       <img src="images/travel/travel2.jpg">
+			      </div>
+			    
+			      <div class="item travel">
+					<img src="images/travel/travel3.jpg">
+			      </div>
+
+			      <div class="item travel">
+			       <img src="images/travel/travel4.jpg">
+			      </div>
+			      <div class="item travel">
+					<img src="images/travel/travel5.jpg">
+			      </div>
+			      <div class="item travel">
+					<img src="images/travel/travel6.jpg">
+			      </div>
+			    </div>
+
+			    <!-- Left and right controls -->
+			    <a class="left carousel-control" href="#travelCarousel" role="button" data-slide="prev">
+			      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			      <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#travelCarousel" role="button" data-slide="next">
+			      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			      <span class="sr-only">Next</span>
+			    </a>
+			  </div>
 			</div>
-			<button class="btn btn-default" id="previous-food">Previous</button>
-			<button class="btn btn-default" id="next-food">Next</button>
-		</div>
-		</section>
+
+	<section class="clearfix" id="food">
+			<div class="container">
+			  <br>
+			  <div id="foodCarousel" class="carousel slide" >
+			    <!-- Indicators -->
+			    <ol class="carousel-indicators">
+			      <li data-target="#foodCarousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#foodCarousel" data-slide-to="1"></li>
+			      <li data-target="#foodCarousel" data-slide-to="2"></li>
+			      <li data-target="#foodCarousel" data-slide-to="3"></li>
+			    </ol>
+
+			    <!-- Wrapper for slides -->
+			    <div class="carousel-inner" role="listbox">
+			      <div class="item active food">
+			        <img src="images/food/food1.jpg">
+			      </div>
+			      <div class="item food">
+			       <img src="images/food/food2.jpg">
+			      </div>
+			      <div class="item food">
+			       <img src="images/food/food3.jpg">
+			      </div>
+			      <div class="item food">
+			       <img src="images/food/food5.jpg">
+			      </div>
+			      <div class="item food">
+			       <img src="images/food/food6.jpg">
+			      </div>
+			    </div>
+
+			    <!-- Left and right controls -->
+			    <a class="left carousel-control" href="#foodCarousel" role="button" data-slide="prev">
+			      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			      <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#foodCarousel" role="button" data-slide="next">
+			      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			      <span class="sr-only">Next</span>
+			    </a>
+			  </div>
+			</div>
 		<section class="clearfix" id="connect">
 			<a name="connect" class='scroll'></a>
-			<h4>Connect</h4>
-			<form id="contactForm">
-				<input type="text" name="name" placeholder="Name">
-
-				<input type="email" name="emailAddress" placeholder="Email">
-
-				<input type="submit" value="Let's Talk!">
+			<form enctype="text/plain" method="get" action="mailto:laura.a.mchugh@gmail.com">
+			<input type="submit" value="Let's Connect!">
 			</form>
-			<div id="successMessage" class="success hide"></div>
 			
 		</section>
 
@@ -77,7 +197,8 @@
 		</main>
 	</div>
 </body>
-	<script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script src="js/index.js"></script>
 
 </html>
