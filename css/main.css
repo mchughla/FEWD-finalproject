@@ -36,38 +36,19 @@
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	cursor: default;
-     background-color: lightgray;
+    background-color: lightgray;
 
 }
-
 .container {
     border: none;
     width: 798px;
 }
 header {
      width: 100%;
-     height: 175px;
-}
-header section p {
-    margin-top: 40px;
-    margin-right: 20px;
-    text-align: right;
-    font-weight: lighter;
-    font-size: 14px;
+     height: 100px;
 }
 
-.nav-item {
-    width: 20%;
-    float: left;
-    text-align: right;
-    background-color: transparent;
-}
-#about {
-    height: 100px;
-    text-align: center;
-    font-weight: lighter;
-    margin: 0 20 20 0;
-}
+
 .curriculum-inspirations {
     float: right;
     padding: 20px;
@@ -85,7 +66,7 @@ a:active {
     color: white;
 }
 a:hover {
-    color: white;
+    color: blue;
 }
 a:visited{
     color: white;
@@ -94,66 +75,74 @@ a:link {
     text-decoration: none;
 }
 
+
 li  {
 	display: inline-block;
+}
+.CI-video {
+    padding-top: 40px;
+}
+.CC-video {
+    padding-top: 70px;
+}
+
+.foreignexchange {
+    width: 100%;
+    max-width: 200px;
 }
 
 .workCarousel {
     width: 100%
-
 }
 
 section .photo {
     height: 100%;
     max-width: 100%;
 }
-
-
-
 h4 {
     padding: 10px;
+    font-weight: lighter;
 }
 section p {
     padding: 10px;
     font-size: 1.2rem;
 }
-
-form {
-    text-align: center;
-    font-size: 14;
-
+.connect {
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.connect img {
+    height: 100%;
 }
 
-footer {
-    background: lightblue;
-    height: 100px;
+.photography {
+    height: 70px;
 }
-footer p {
-    font-size: 14px;
+.photography h5 {
+    padding-left: 10px;
     font-weight: lighter;
-    text-align: right;
-    margin: 5px;
-
 }
 
 
 
 
-/******************************************
-/* RESPONSIVE STYLES
-/*******************************************/
-@media screen and (max-width: 798px) {
-    
+@media screen and (max-width: 798px){
     .container {
         width: 100%;
     }
-    .nav-item {
-        width: 100%;
-}
-    nav {
-        width: 100%;
-        display: none;
+    .CI-video {
+        padding-top: 0px;
     }
+    .CC-video {
+        padding-top: 0px;
+    }
+    .connect img {
+        padding: 40px;
+    }
+
 }
+
+
 
 
