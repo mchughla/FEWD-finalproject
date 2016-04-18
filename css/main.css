@@ -62,6 +62,20 @@ header section p {
     text-align: right;
     background-color: transparent;
 }
+#about {
+    height: 100px;
+    text-align: center;
+    font-weight: lighter;
+    margin: 0 20 20 0;
+}
+.curriculum-inspirations {
+    float: right;
+    padding: 20px;
+}
+.curriculum-inspirations p {
+    text-align: right;
+    padding: 20px;
+}
 
 a {
     color: white ;
@@ -83,13 +97,7 @@ a:link {
 li  {
 	display: inline-block;
 }
-nav {
-    position: fixed;
-    width: 100%;
-}
-section {
-    text-align: center;
-}
+
 .workCarousel {
     width: 100%
 
@@ -100,12 +108,7 @@ section .photo {
     max-width: 100%;
 }
 
-#about {
-    height: 100px;
-    text-align: center;
-    font-weight: lighter;
-    margin: 0 20 20 0;
-}
+
 
 h4 {
     padding: 10px;
