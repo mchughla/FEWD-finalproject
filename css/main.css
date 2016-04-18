@@ -31,18 +31,13 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-header,
-main, 
-section,
-footer
-{
-    background-color: lightgray;
-}
 
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	cursor: default;
+     background-color: lightgray;
+
 }
 
 .container {
@@ -51,23 +46,16 @@ body {
 }
 header {
      width: 100%;
-     margin: 0 0;
-     height: 100px;
+     height: 175px;
 }
-header p {
+header section p {
     margin-top: 40px;
+    margin-right: 20px;
     text-align: right;
     font-weight: lighter;
-    font-size: 45px;
+    font-size: 14px;
 }
 
-nav {
-     position: fixed;
-     width: 100%;
-     font-size: 20px;
-
-
-}
 .nav-item {
     width: 20%;
     float: left;
@@ -88,18 +76,23 @@ a:hover {
 a:visited{
     color: white;
 }
-
-nav a:link {
+a:link {
     text-decoration: none;
-
 }
 
-nav ul {
-	list-style: none;
-
+li  {
+	display: inline-block;
+}
+nav {
+    position: fixed;
+    width: 100%;
 }
 section {
     text-align: center;
+}
+.workCarousel {
+    width: 100%
+
 }
 
 section .photo {
@@ -107,18 +100,11 @@ section .photo {
     max-width: 100%;
 }
 
-
-#food img {
-    max-width:100%;
-}
 #about {
     height: 100px;
     text-align: center;
     font-weight: lighter;
     margin: 0 20 20 0;
-}
-img {
-    max-width: 100%;
 }
 
 h4 {
@@ -137,6 +123,7 @@ form {
 
 footer {
     background: lightblue;
+    height: 100px;
 }
 footer p {
     font-size: 14px;
@@ -145,9 +132,6 @@ footer p {
     margin: 5px;
 
 }
-
-
-
 
 
 
@@ -162,9 +146,9 @@ footer p {
     }
     .nav-item {
         width: 100%;
-        display: none;
 }
     nav {
+        width: 100%;
         display: none;
     }
 }
